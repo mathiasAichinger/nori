@@ -168,7 +168,7 @@ class Nori
               out.merge!( k => v.map{|e| e.to_hash[k]})
             end
           end
-          out.merge! prefixed_attributes unless attributes.empty?
+          #out.merge! prefixed_attributes unless attributes.empty?
           out = out.empty? ? nil : out
         end
 
